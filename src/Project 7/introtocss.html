@@ -2,12 +2,69 @@
 <html>
     <head>
         <link href="css/styles.css" type="text/css" rel="stylesheet" />
-        <title>Introduction to CSS</title>
+        <title>Form Basics</title>
     </head>
     <body>
-        <h1>From Garden to Plate</h1>
-        <p>A <i>potager</i> is a French term for an ornamental vegetable or kitchen garden...</p>
-        <h2>What to Plant</h2>
-        <p>Plants are chosen as much for their functionality as for their color and form...</p>
+        <h2>Welcome to Computer Science @ MHS</h2>
+        <p>Please complete the following form.</p>
+        <hr />
+        <h3>Demographic Information</h3>
+        <form action="mailto:micmurphy@student.mamkschools.org" method="post" enctype="multipart/form-data" name="EmailForm">
+            <p>
+                First Name:
+                <input type="text" name="firstname" size="15" maxlength="30" placeholder="First Name" />
+                Surname:
+                <input type="text" name="surname" size="15" maxlength="30" placeholder="Surname" />
+            </p>
+            <p>
+                Username:
+                <input type="email" name="password" size="15" maxlength="16" placeholder="Username" />
+                Password:
+                <input type="password" name="password" size="15" maxlength="16" placeholder="Password" />
+            </p>
+            <p>
+                Date of Birth:
+                <input type="date" name="dob" size="15" maxlength="16" />
+            </p>
+            <hr />
+            <h3>Class Information</h3>
+            <select name="courses">
+                <option value="ECS">Exploring Computer Science</option>
+                <option value="java">Intro. to Java Programming</option>
+                <option value="ap">AP Computer Science</option>
+                <option value="cdl">Collaborative Design Lab</option>
+            </select>
+            <br />
+            <p>
+                <br />Teacher:<br />
+                <input type="radio" name="teacher" value="mannina" />
+                Mr Mannina
+                <input type="radio" name="teacher" value="jadav" />
+                Dr Jadav
+            </p>
+            <p>
+                Period:<br />
+                <input type="checkbox" name="period" value="1st" />
+                1<sup>st</sup>
+                <input type="checkbox" name="period" value="2nd" />
+                2<sup>nd</sup>
+                <input type="checkbox" name="period" value="3th" />
+                3<sup>rd</sup>
+                <input type="checkbox" name="period" value="4th" />
+                4<sup>th</sup>
+                <input type="checkbox" name="period" value="5th" />
+                5<sup>th</sup>
+                <input type="checkbox" name="period" value="6th" />
+                6<sup>th</sup>
+                <input type="checkbox" name="period" value="7th" />
+                7<sup>th</sup>
+                <input type="checkbox" name="period" value="8th" />
+                8<sup>th</sup>
+            </p>
+            <p>What are you most excited about for the school year?</p>
+            <textarea name="comments" cols="75" rows="7" placeholder="Enter your comments"></textarea>
+            <br /><br />
+            <input type="submit" value="Submit" />
+        </form>
     </body>
 </html>

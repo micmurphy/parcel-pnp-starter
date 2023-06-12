@@ -9,3 +9,11 @@ h1, h2 {
 p {
     color: steelblue;
 }
+
+input.submit{
+    color:black
+}
+
+input.submit:hover{
+    background-color: cadetblue;
+}
